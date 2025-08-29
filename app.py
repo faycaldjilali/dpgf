@@ -52,11 +52,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # App title and description
-st.markdown('<h1 class="main-header">🏗️ Construction Cost Analyzer</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">🏗️ Analyseur de Coûts de Construction </h1>', unsafe_allow_html=True)
 st.markdown("""
 <div class="info-box">
-    <p>This tool analyzes construction Excel files to provide detailed material cost breakdowns, 
-    including quantities, unit prices, and total costs. For missing prices, it uses French market rates.</p>
+    <p>Cet outil analyse vos fichiers Excel de construction afin de fournir un détail complet des coûts des matériaux, incluant les quantités, les prix
+    unitaires et les coûts totaux. Pour les prix manquants, il utilise les tarifs du marché français..</p>
     <p><strong>Instructions:</strong> Upload your Excel file, then click 'Analyze Costs'.</p>
 </div>
 """, unsafe_allow_html=True)
@@ -75,12 +75,17 @@ with st.sidebar:
     
     st.markdown("---")
     st.info("""
-    This tool will:
-    1. Extract data from your Excel file
-    2. Identify material quantities
-    3. Apply market prices where needed
-    4. Calculate total costs (quantity × price)
-    5. Provide a detailed breakdown
+    Cet outil permet de :
+
+    Extraire les données de votre fichier Excel
+
+    Identifier les quantités de matériaux
+
+    Appliquer les prix du marché lorsque nécessaire
+
+    Calculer les coûts totaux (quantité × prix)
+
+    Fournir un détail complet des coûts
     """)
 
 # File upload section
